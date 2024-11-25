@@ -4,7 +4,7 @@ document.getElementById("getWeather").addEventListener("click", getWeather);
 // Function to get the weather data
 function getWeather() {
     const city = document.getElementById("city").value; // Get the city entered by the user
-    const apiKey = 'your_api_key'; // Replace with your actual API key from OpenWeatherMap
+    const apiKey = '95e6e13f56fa93bf3300e4a6844dc074'; // Replace with your actual API key from OpenWeatherMap
     const url = `https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=${apiKey}&units=metric`;
 
     // Fetch weather data from OpenWeatherMap API
