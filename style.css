@@ -1,72 +1,65 @@
-/* Basic reset */
-body, h1, input, button, p {
-    margin: 0;
-    padding: 0;
-    font-family: 'Arial', sans-serif;
-}
-
-/* Set the background color for the entire page */
+/* Body Styles */
 body {
-    background: #87CEEB; /* Light blue sky background */
-    text-align: center;
-    padding: 20px;
+    background-image: url('https://www.w3schools.com/w3images/mountains.jpg');
+    background-size: cover;
+    background-position: center;
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
 }
 
-/* Container for the weather app */
+/* Weather Container */
 .weather-container {
-    max-width: 400px;
-    margin: 0 auto;
-    background-color: #fff;
-    border-radius: 10px;
-    padding: 20px;
-    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
-}
-
-/* Style for the header */
-h1 {
-    color: #1e90ff; /* Blue color for the title */
-    margin-bottom: 20px;
-}
-
-/* Style for the input field */
-input {
+    background: rgba(255, 255, 255, 0.8); /* Light background */
     width: 80%;
-    padding: 10px;
-    margin: 10px 0;
-    border: 2px solid #1e90ff;
-    border-radius: 5px;
-    font-size: 16px;
+    max-width: 400px;
+    margin: 50px auto;
+    padding: 20px;
+    border-radius: 10px;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 }
 
-/* Style for the button */
-button {
-    padding: 10px 20px;
-    background-color: #1e90ff;
+/* Input & Button Styles */
+#cityInput {
+    padding: 10px;
+    width: 70%;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    margin-bottom: 10px;
+}
+
+#getWeatherBtn {
+    background-color: #1E90FF;
     color: white;
     border: none;
-    border-radius: 5px;
+    padding: 10px 20px;
+    font-size: 1em;
     cursor: pointer;
-    font-size: 16px;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
 }
 
-/* Hover effect for the button */
-button:hover {
-    background-color: #005bbb;
+#getWeatherBtn:hover {
+    background-color: #4682B4;
 }
 
-/* Style for the weather information */
-#weatherInfo {
-    margin-top: 20px;
-    font-size: 18px;
+/* Weather Info Styling */
+#weatherOutput h2 {
+    font-size: 2em;
+    color: #1E90FF; /* Blue color */
+}
+
+#weatherOutput p {
+    font-size: 1.2em;
     color: #333;
+    margin: 10px 0;
 }
 
-/* Responsive design: make the weather container smaller on mobile screens */
-@media (max-width: 600px) {
-    .weather-container {
-        padding: 15px;
-    }
-    input, button {
-        width: 100%;
-    }
+#weatherOutput p:first-child {
+    font-weight: bold;
 }
+
