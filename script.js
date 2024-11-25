@@ -1,4 +1,4 @@
-const apiKey = "0dc2957f911be0df7a060c2992526cba"; // Replace with your OpenWeatherMap API key
+const apiKey = "95e6e13f56fa93bf3300e4a6844dc074"; // Replace with your OpenWeatherMap API key
 const city = "London"; // Replace with your city
 
 fetch(`https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=${apiKey}&units=metric`)
