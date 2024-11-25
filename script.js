@@ -2,7 +2,7 @@ document.getElementById('weather-form').addEventListener('submit', function(even
     event.preventDefault();
     
     const city = document.getElementById('city-input').value;
-    const apiKey = '0dc2957f911be0df7a060c2992526cba'; // Replace with your actual OpenWeatherMap API key.
+    const apiKey = '0dc2957f911be0df7a060c2992526cba'; 
     const apiUrl = `https://api.openweathermap.org/data/2.5/weather?q=${city}&units=metric&appid=${apiKey}`;
 
     fetch(apiUrl)
@@ -35,5 +35,3 @@ function showError(message) {
     document.getElementById('weather-display').classList.add('hidden');
     document.getElementById('error-message').textContent = message;
 }
-
-
